@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Darumadrop+One&family=Leckerli+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Momo+Signature&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    .playlist{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 10px;
+    }
+    .bignum {
+      text-align: center;
+      font-family: "Darumadrop One", sans-serif;
+      font-size: 300px;
+      margin-top: 150px;
+    }
+
+    .numdesc{
+      text-align:center;
+      font-family: "Darumadrop One", sans-serif;
+      font-size: 30px;
+    }
+
+
+    .text{
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin-bottom: 5%;
+    }
+
+    .bobateanotfound:hover{
+      color: #a0522d;
+      transition: color 0.5s ease;
+    }
+
+    .link {
+      text-align: center;
+      font-family: "Darumadrop One", sans-serif;
+    }
+
+    a:link{
+      color: #365d73;
+    }
+
+    a:visited {
+      color: #967626;
+    }
+
+
+    .centertext{
+      color: #3D2B18;
+    }
+
+    p{
+      text-align:center;
+      font-family: "Darumadrop One", sans-serif;
+    }
+
+
+
+    .darumadrop-one-regular {
+      font-family: "Darumadrop One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .cherry-bomb-one-regular {
+      font-family: "Cherry Bomb One", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    body{
+      background: #F0E9D8;
+      background: radial-gradient(circle, rgba(240, 233, 216, 1) 0%, rgba(154, 128, 100, 1) 50%, rgba(107, 88, 66, 1) 100%);
+      cursor: url('https://boba-bash-brand.vercel.app/pics/cup.png'), auto;
+    }
+
+
+    @-webkit-keyframes snowflakes-fall {
+      0% {
+        top: -10%
+      }
+      100% {
+        top: 100%
+      }
+    }
+
+    @-webkit-keyframes snowflakes-shake {
+      0%,
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+      }
+      50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+      }
+    }
+
+    @keyframes snowflakes-fall {
+      0% {
+        top: -10%
+      }
+      100% {
+        top: 100%
+      }
+    }
+
+    @keyframes snowflakes-shake {
+      0%,
+      100% {
+        transform: translateX(0)
+      }
+      50% {
+        transform: translateX(80px)
+      }
+    }
+
+    .snowflake {
+      position: fixed;
+      top: -10%;
+      z-index: 9999;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+      -webkit-animation-duration: 10s, 3s;
+      -webkit-animation-timing-function: linear, ease-in-out;
+      -webkit-animation-iteration-count: infinite, infinite;
+      -webkit-animation-play-state: running, running;
+      animation-name: snowflakes-fall, snowflakes-shake;
+      animation-duration: 10s, 3s;
+      animation-timing-function: linear, ease-in-out;
+      animation-iteration-count: infinite, infinite;
+      animation-play-state: running, running
+    }
+
+    .snowflake:nth-of-type(0) {
+      left: 1%;
+      -webkit-animation-delay: 0s, 0s;
+      animation-delay: 0s, 0s
+    }
+
+    .snowflake:nth-of-type(1) {
+      left: 10%;
+      -webkit-animation-delay: 1s, 1s;
+      animation-delay: 1s, 1s
+    }
+
+    .snowflake:nth-of-type(2) {
+      left: 20%;
+      -webkit-animation-delay: 6s, .5s;
+      animation-delay: 6s, .5s
+    }
+
+    .snowflake:nth-of-type(3) {
+      left: 30%;
+      -webkit-animation-delay: 4s, 2s;
+      animation-delay: 4s, 2s
+    }
+
+    .snowflake:nth-of-type(4) {
+      left: 40%;
+      -webkit-animation-delay: 2s, 2s;
+      animation-delay: 2s, 2s
+    }
+
+    .snowflake:nth-of-type(5) {
+      left: 50%;
+      -webkit-animation-delay: 8s, 3s;
+      animation-delay: 8s, 3s
+    }
+
+    .snowflake:nth-of-type(6) {
+      left: 60%;
+      -webkit-animation-delay: 6s, 2s;
+      animation-delay: 6s, 2s
+    }
+
+    .snowflake:nth-of-type(7) {
+      left: 70%;
+      -webkit-animation-delay: 2.5s, 1s;
+      animation-delay: 2.5s, 1s
+    }
+
+    .snowflake:nth-of-type(8) {
+      left: 80%;
+      -webkit-animation-delay: 1s, 0s;
+      animation-delay: 1s, 0s
+    }
+
+    .snowflake:nth-of-type(9) {
+      left: 90%;
+      -webkit-animation-delay: 3s, 1.5s;
+      animation-delay: 3s, 1.5s
+    }
+
+    .snowflake:nth-of-type(10) {
+      left: 25%;
+      -webkit-animation-delay: 2s, 0s;
+      animation-delay: 2s, 0s
+    }
+
+    .snowflake:nth-of-type(11) {
+      left: 65%;
+      -webkit-animation-delay: 4s, 2.5s;
+      animation-delay: 4s, 2.5s
+    }
+
+    .snowflake {
+      position: fixed;
+      top: -10%;
+      z-index: 9999;
+      animation-name: snowflakes-fall, snowflakes-shake;
+      animation-duration: 10s, 3s;
+      animation-timing-function: linear, ease-in-out;
+      animation-iteration-count: infinite, infinite;
+      animation-play-state: running, running;
+    }
+
+    /* Replace image with CSS pearl */
+    .snowflake::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #2b1a0e 40%, #000 100%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="snowflakes">
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+  </div>
+
+  <div class="centertext">
+    <h1 class="bignum">404</h1>
+    <div class="text">
+      <p class="bobateanotfound">BOBA TEA? BOBA TEA NOT FOUND?</p>
+      <a class="link" href="https://bash.hackclub.com/events/37">More boba here</a>
+      <h2 class="numdesc">Page not found</h2>
+    </div>
+  </div>
+
+  <iframe id="playlist" class="playlist" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/76GBBnBIXjXuzv83xl1pzd?utm_source=generator&si=060260c8ca2b4503" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
