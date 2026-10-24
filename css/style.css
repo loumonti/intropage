@@ -1,0 +1,93 @@
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab.button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab.button:hover {
+  background-color: #ddd;
+}
+
+.tab.button:active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.cinna-pink {
+  float: right;
+}
+
+.booklist{
+  font-family: "Sour Gummy", sans-serif;
+}
+
+#quote {
+  font-size: 18px;
+  font-family: "Sour Gummy", sans-serif;
+  font-style: italic;
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(106, 130, 62);
+  max-width: 600px;
+  text-align: center;
+}
+.buttonq {
+  font-family: "Sour Gummy", sans-serif;
+  padding: 12px 24px;
+  margin: 5px 10px;
+  font-size: 16px;
+  background: #ffa4bb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  }
+.buttonq:hover {
+  background: #ed6d91;
+}
+
+.wheredocats {
+  border: 10px solid;
+  border-color: #ed6d91;
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+}
+
+.topovsaguila {
+  border: 10px solid;
+  border-color: #ed6d91;
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+}
+
+.dollcat{
+  height: 30%;
+  width: 30%;
+}
+
+ul, ol {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 30px;
+}
